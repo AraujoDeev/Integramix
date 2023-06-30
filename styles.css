@@ -1,0 +1,400 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  background: linear-gradient(90deg, black, #062d2a);
+  height: 141px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 0 158px;
+}
+
+.header-top {
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lista-contatos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.lista-itens {
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+.links {
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+.midias {
+  width: 59px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.fa-brands {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.header-bottom {
+  width: 1266px;
+  height: 98px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 181px;
+  height: 68px;
+  margin: 0 0 0 14px;
+}
+
+.menu {
+  width: 1025px;
+  padding: 0 50px;
+}
+
+.menu ul {
+  display: flex;
+  height: 98px;
+  align-items: center;
+  width: 63%;
+}
+
+.lista-menu {
+  list-style: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.lista-menu:hover {
+  background-color: rgb(67, 160, 160);
+  transition: ease-in all 0.2s;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: white;
+  list-style: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(67, 160, 160);
+  transition: ease-in all 0.2s;
+}
+
+.dropdown {
+  visibility: hidden;
+  opacity: 0;
+  width: 200px;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: rgb(67, 160, 160);
+  display: flex;
+  flex-direction: column;
+  right: 628px;
+  top: 110px;
+  position: absolute;
+}
+
+.dropdown li:hover {
+  background-color: black;
+}
+
+.dropdown a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 14px 0;
+  padding-left: 8px;
+  display: flex;
+}
+
+.show {
+  transform: translateY(0rem);
+  visibility: visible;
+  opacity: 1;
+}
+
+.arrow {
+  transform: rotate(180deg);
+  transition: 0.2s ease;
+}
+
+.fa-chevron-right {
+  margin-left: 8px;
+  font-size: 0.8em;
+}
+
+.main {
+  height: auto;
+  padding: 0 0 0 158px;
+}
+
+.section {
+  display: flex;
+  gap: 20px;
+}
+
+.artigo {
+  text-align: justify;
+  width: 66%;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.397);
+}
+
+.img-artigo {
+  float: right;
+  margin-left: 10px;
+}
+
+.paragrafo {
+  margin-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.barra-lateral {
+  width: 20%;
+}
+
+.orcamento {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-orcamento {
+  width: 100%;
+  padding: 6px;
+  border: none;
+  background-color: #00838f;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orcamento p {
+  margin-top: 10px;
+}
+
+p .strong {
+  color: #00838f;
+}
+
+.btn-orcamento:hover {
+  background-color: transparent;
+  border: 1px solid #00838f;
+  padding: 5px;
+  color: black;
+}
+
+.btn-informacoes {
+  width: 100%;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background-color: #00838f;
+  color: white;
+  font-weight: 600;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.informacoes {
+  max-height: 800px;
+  margin-top: 4px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sub-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-menu li {
+  width: 100%;
+  height: auto;
+  padding: 4px;
+  display: flex;
+}
+
+.sub-menu a {
+  border-left: 2px solid #cccccc;
+  color: #4283ac;
+  width: 100%;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 0 8px 6px;
+}
+
+.sub-menu a:hover {
+  background-color: #cccccc73;
+  border-left: 2px solid #4283ac;
+}
+
+.compartilhar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 66%;
+  border-bottom: 1px solid rgba(192, 192, 192, 0.397);
+}
+
+.redes-sociais {
+  width: 200px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tw,
+.fa,
+.em,
+.wh {
+  font-size: 38px;
+}
+
+.regioes {
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 8px;
+  padding: 20px;
+  background: linear-gradient(#f4f4f4, white);
+  width: 66%;
+  color: #00838f;
+}
+
+.veja-mais {
+  width: 66%;
+  margin-top: 20px;
+}
+
+.veja-mais h2 {
+  color: #00838f;
+}
+
+.lista-imagens {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.lista-imagens li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  color: #5a5a5a;
+}
+
+.lista-imagens img {
+  width: 90%;
+}
+
+.lista-imagens p {
+  font-size: 14px;
+}
+
+.footer {
+  background-color: black;
+  height: 344px;
+}
+
+.footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.footer-top img {
+  width: 280px;
+  height: 105px;
+}
+
+.intitucional li {
+  list-style: none;
+  line-height: 30px;
+}
+
+.intitucional a {
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.intitucional li:hover {
+  color: #00838f;
+}
+
+.mensagem-whatsapp {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  position: fixed;
+  bottom: 67px;
+  right: 1.3rem;
+  background-color: #29a71a;
+}
+
+.mensagem-whatsapp a {
+  color: white;
+}
+
+@media (max-width: 400px) {
+  body {
+    background-color: pink;
+    width: 100%;
+  }
+}
