@@ -594,6 +594,9 @@ p .strong {
   .contatos p {
     font-size: 12px;
   }
+  .midias {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
