@@ -604,21 +604,15 @@ p .strong {
     width: 100%;
     height: 170px;
   }
+
   .lista-contatos {
-    position: relative;
-    left: -260px;
-    top: 15px;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    width: 400px;
+    display: none;
   }
   .lista-itens {
     padding: 2px 0;
   }
   .midias {
-    position: relative;
-    left: -130px;
+    display: none;
   }
   .header-bottom {
     padding-top: 20px;
@@ -666,6 +660,25 @@ p .strong {
     background-color: black;
     cursor: pointer;
     color: white;
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
+  .artigo {
+    width: 95%;
+  }
+  .barra-lateral {
+    width: 95%;
+  }
+  .compartilhar {
+    width: 95%;
+  }
+  .regioes {
+    width: 95%;
+  }
+  .veja-mais {
+    width: 95%;
   }
 }
 
