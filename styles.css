@@ -17,7 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   color: white;
-  padding: 0 158px;
+  /* padding: 0 158px; */
 }
 
 .header-top {
@@ -72,7 +72,6 @@ body {
 .logo {
   width: 181px;
   height: 68px;
-  margin: 0 0 0 14px;
 }
 
 .menu {
@@ -467,9 +466,124 @@ p .strong {
   color: white;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1024px) {
   body {
-    background-color: pink;
     width: 100%;
+    overflow-x: hidden;
+  }
+  .header {
+    width: 1024px;
+  }
+  .header-top {
+    width: 1024px;
+    padding: 0 120px;
+  }
+  .header-top p {
+    font-size: 10px;
+  }
+  .header-bottom {
+    padding: 0 120px;
+  }
+
+  .header-bottom .logo {
+    width: 100px;
+  }
+  .dropdown {
+    width: 157px;
+    height: 200px;
+    position: absolute;
+    top: 110px;
+    right: 227px;
+  }
+  .main {
+    padding: 0 0 0 120px;
+  }
+  .main h1 {
+    margin: 20px 0;
+    font-size: 22px;
+  }
+
+  .img-artigo {
+    width: 200px;
+  }
+  .artigo p {
+    font-size: 14px;
+  }
+  .artigo h2 {
+    font-size: 17px;
+  }
+
+  .btn-orcamento {
+    font-size: 12px;
+  }
+  .orcamento p {
+    padding: 0 4px;
+    font-size: 10px;
+  }
+
+  .btn-informacoes {
+    font-size: 12px;
+  }
+  .sub-menu a {
+    font-size: 10px;
+  }
+  .compartilhar p {
+    font-size: 12px;
+  }
+  .redes-sociais i,
+  .wh {
+    font-size: 30px;
+  }
+  .regioes {
+    transition: all ease 0.3s;
+    height: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 0 20px 20px 20px;
+    background: linear-gradient(#f4f4f4, white);
+    width: 66%;
+    color: #00838f;
+    height: 50px;
+    border: 2px solid rgba(128, 128, 128, 0.479);
+  }
+  .regioes-show {
+    height: 250px;
+  }
+  #title-regioes {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  .nav-regioes {
+    margin-top: 20px;
+  }
+  .nav-regioes ul {
+    display: grid;
+    gap: 0.5rem;
+    height: auto;
+    margin-top: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .lista-regioes li {
+    font-size: 10px;
+  }
+  .veja-mais h2 {
+    font-size: 16px;
+  }
+  .footer {
+    margin-top: 20px;
+    padding: 120px;
+  }
+  .footer-top img {
+    width: 100px;
+  }
+  .contatos {
+    width: 300px;
+  }
+  .contatos p {
+    font-size: 12px;
   }
 }
