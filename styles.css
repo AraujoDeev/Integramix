@@ -702,6 +702,10 @@ p .strong {
     display: flex;
     width: 390px;
   }
+  #burguer {
+    position: absolute;
+    top: 90px;
+  }
   .lista-contatos {
     display: none;
   }
